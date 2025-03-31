@@ -1,1 +1,1 @@
-# PyQT_GUI_Animated_Side_Menu
+# PyQT GUI Animated Side Menu

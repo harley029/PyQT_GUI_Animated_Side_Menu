@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.crt
+*.key
+read_me.txt
+build/
+.mypy_cache/
+.pytest_cache/
