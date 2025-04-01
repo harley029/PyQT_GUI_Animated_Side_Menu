@@ -4,10 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pyqt5 = "5.15.11"
-qt-pyqt-pyside-custom-widgets = "1.0.2"
+pyqt6 = "==6.4.2"
+qt-pyqt-pyside-custom-widgets = "*"
+pyside6 = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.13"
+python_version = "3.12"
+python_full_version = "3.12.8"
