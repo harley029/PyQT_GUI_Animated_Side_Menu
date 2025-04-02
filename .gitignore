@@ -7,3 +7,4 @@ read_me.txt
 build/
 .mypy_cache/
 .pytest_cache/
+venv/
