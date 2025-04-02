@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>database.png</file>
+    <file>command.png</file>
+    <file>codesandbox.png</file>
+    <file>aperture.png</file>
+    <file>menu.png</file>
+  </qresource>
+</RCC>

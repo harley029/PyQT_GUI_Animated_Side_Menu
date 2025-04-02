@@ -14,6 +14,29 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">* {
+border:none ;
+background-color: transparent;
+color:#fdfdfd
+}
+#centralwidget{
+background-color: #040f13;
+}
+#side_menu{
+background-color: #071e26;
+border-radius: 20px;
+}
+QPushButton{
+paddng: 10px;
+background-color: #040f13;
+border-radius: 5px;
+}
+#main_body{
+background-color: #071e26;
+border-radius: 10px;
+}</string>
+   </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <property name="spacing">
      <number>0</number>
@@ -50,21 +73,21 @@
       <property name="frameShadow">
        <enum>QFrame::Shadow::Raised</enum>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0">
        <property name="spacing">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="leftMargin">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="topMargin">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="rightMargin">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="bottomMargin">
-        <number>0</number>
+        <number>1</number>
        </property>
        <item alignment="Qt::AlignmentFlag::AlignLeft">
         <widget class="QFrame" name="frame_2">
@@ -74,21 +97,21 @@
          <property name="frameShadow">
           <enum>QFrame::Shadow::Raised</enum>
          </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0">
           <property name="spacing">
            <number>0</number>
           </property>
           <property name="leftMargin">
-           <number>0</number>
+           <number>1</number>
           </property>
           <property name="topMargin">
-           <number>0</number>
+           <number>1</number>
           </property>
           <property name="rightMargin">
-           <number>0</number>
+           <number>1</number>
           </property>
           <property name="bottomMargin">
-           <number>0</number>
+           <number>1</number>
           </property>
           <item>
            <widget class="QPushButton" name="pushButton">
@@ -112,6 +135,16 @@
             <property name="text">
              <string>MENU</string>
             </property>
+            <property name="icon">
+             <iconset resource="../Icons/icons.qrc">
+              <normaloff>:/icons/menu.png</normaloff>:/icons/menu.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
            </widget>
           </item>
          </layout>
@@ -125,21 +158,21 @@
          <property name="frameShadow">
           <enum>QFrame::Shadow::Raised</enum>
          </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0">
           <property name="spacing">
-           <number>0</number>
+           <number>1</number>
           </property>
           <property name="leftMargin">
-           <number>0</number>
+           <number>1</number>
           </property>
           <property name="topMargin">
-           <number>0</number>
+           <number>1</number>
           </property>
           <property name="rightMargin">
-           <number>0</number>
+           <number>1</number>
           </property>
           <property name="bottomMargin">
-           <number>0</number>
+           <number>1</number>
           </property>
           <item>
            <widget class="QLabel" name="label">
@@ -177,45 +210,39 @@
       <property name="frameShadow">
        <enum>QFrame::Shadow::Raised</enum>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
        <property name="spacing">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="leftMargin">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="topMargin">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="rightMargin">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="bottomMargin">
-        <number>0</number>
+        <number>1</number>
        </property>
-       <item alignment="Qt::AlignmentFlag::AlignLeft">
-        <widget class="QFrame" name="side_menu">
-         <property name="frameShape">
-          <enum>QFrame::Shape::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Shadow::Raised</enum>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QCustomSlideMenu" name="side_menu" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0">
           <property name="spacing">
-           <number>0</number>
+           <number>1</number>
           </property>
           <property name="leftMargin">
-           <number>0</number>
+           <number>1</number>
           </property>
           <property name="topMargin">
-           <number>0</number>
+           <number>1</number>
           </property>
           <property name="rightMargin">
-           <number>0</number>
+           <number>1</number>
           </property>
           <property name="bottomMargin">
-           <number>0</number>
+           <number>1</number>
           </property>
           <item alignment="Qt::AlignmentFlag::AlignTop">
            <widget class="QFrame" name="frame_4">
@@ -237,26 +264,36 @@
             <property name="frameShadow">
              <enum>QFrame::Shadow::Raised</enum>
             </property>
-            <layout class="QVBoxLayout" name="verticalLayout_3">
+            <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0,0">
              <property name="spacing">
-              <number>0</number>
+              <number>1</number>
              </property>
              <property name="leftMargin">
-              <number>0</number>
+              <number>1</number>
              </property>
              <property name="topMargin">
-              <number>0</number>
+              <number>1</number>
              </property>
              <property name="rightMargin">
-              <number>0</number>
+              <number>1</number>
              </property>
              <property name="bottomMargin">
-              <number>0</number>
+              <number>1</number>
              </property>
              <item>
               <widget class="QPushButton" name="pushButton_2">
                <property name="text">
                 <string>Item 1</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../Icons/icons.qrc">
+                 <normaloff>:/icons/aperture.png</normaloff>:/icons/aperture.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
                </property>
               </widget>
              </item>
@@ -265,6 +302,10 @@
                <property name="text">
                 <string>Item 2</string>
                </property>
+               <property name="icon">
+                <iconset resource="../Icons/icons.qrc">
+                 <normaloff>:/icons/command.png</normaloff>:/icons/command.png</iconset>
+               </property>
               </widget>
              </item>
              <item>
@@ -272,12 +313,20 @@
                <property name="text">
                 <string>Item 3</string>
                </property>
+               <property name="icon">
+                <iconset resource="../Icons/icons.qrc">
+                 <normaloff>:/icons/codesandbox.png</normaloff>:/icons/codesandbox.png</iconset>
+               </property>
               </widget>
              </item>
              <item>
               <widget class="QPushButton" name="pushButton_5">
                <property name="text">
                 <string>Item 4</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../Icons/icons.qrc">
+                 <normaloff>:/icons/database.png</normaloff>:/icons/database.png</iconset>
                </property>
               </widget>
              </item>
@@ -321,6 +370,16 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomSlideMenu</class>
+   <extends>QWidget</extends>
+   <header location="global">Custom_Widgets.Widgets.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Icons/icons.qrc"/>
+ </resources>
  <connections/>
 </ui>
